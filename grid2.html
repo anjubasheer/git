@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1{grid-area: header;
+               height: 100px;
+               width: 1490px;
+               
+              }
+        .item2{grid-area: nav;
+              height: 510px;
+              }
+        .item3{grid-area: article;
+               height: 415px;
+              }
+        .item4{grid-area: ads;
+              height: 415px;}
+        .item5{grid-area: footer;
+              height: 50px;}
+        .grid-style{
+            display: grid;
+            grid-template-areas: 'header header header header header '
+                                'nav article article article ads'
+                                'nav footer footer footer footer';
+            grid-gap: 5px;        
+            background-color: aqua;  
+            padding: 5px;          
+        }
+        .grid-style >div{
+            background-color: bisque;
+            text-align: left;
+            padding: 20px 0;
+            font-size: 15px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            
+            
+        }
+        .grid-style >div[class="item1"]{
+            background-color: brown;
+        }
+        .grid-style >div[class="item2"]{
+            background-color: red;
+        }
+        .grid-style >div[class="item3"]{
+            background-color: maroon;
+        }
+        .grid-style >div[class="item4"]{
+            background-color: saddlebrown;
+        }.grid-style >div[class="item5"]{
+            background-color:crimson;
+        }
+        .grid-style img{height: 100px;
+            width: 1490px;
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="grid-style">
+        <div class="item1">HEADER <img src="f1.jpg" alt="error"></div>
+        <div class="item2">NAV</div>
+        <div class="item3">ARTICLE</div>
+        <div class="item4">ADS</div>
+        <div class="item5">FOOTER</div>
+
+
+    </div>
+
+    
+</body>
+</html>

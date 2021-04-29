@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            margin: 0;
+            padding: 0 0 20px;
+            font-size: 20px;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            color:coral;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background: url("wood1.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        .wood1{
+            width: 1366px;
+            height: 696px;
+        }
+        .login
+           {
+            width: 320px;
+            height: 450px;
+            background:black ;
+            color: white;
+            top:50%;
+            left:50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            opacity: .7;
+            }
+        .login p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            }
+        .login input{
+            margin-bottom: 20px;
+            width: 100%;
+        }   
+        .login input[type="text"],input[type="password"]{
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+        .login input[type="submit"],input[type="reset"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: coral;
+            color: white;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        </style>
+</head>
+<body>
+    <img class="wood1">
+    <div class="login" >
+    <h1>LOG IN HERE</h1>
+
+    <form>
+        <p>USERNAME</p>
+        <input type="text" placeholder="enter your username">
+        <p>PASSWORD</p>
+        <input type="password" placeholder="password">
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+
+    </form>
+    </div>
+</body>
+</html>
