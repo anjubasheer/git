@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       num=[];
+        
+        
+        for(i=0;i<5;i++){
+                          a=Number(prompt("enter the numbers" +i));
+                          num.push(a);
+                         } 
+        for(i of num){
+                       console.log(i);
+                     }
+                     num.sort(function(a,b){
+                                            return b-a;
+                                           }
+                                           );
+                        console.log(num[1]);
+                        document.write('the second hieghest number is' +num[1]);
+                   
+    </script>
+    
+
+</body>
+</html>

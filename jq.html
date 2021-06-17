@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return check()">
+        <label for="">enter name</label>
+        <input type="text">
+        <input type="button" value="login">
+        
+    </form>
+    <script>
+        function check(){
+            data=document.getElementById("one").value;
+            if(data.length<5){
+                alert("length should be 5")
+            }
+            return false;
+        
+        }
+    </script>
+    
+</body>
+</html>

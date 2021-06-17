@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">car</p>
+    <script>
+        car={
+            name  :"nano",
+            price :1000000,
+            color  :"grey",
+            carname:function(){
+            return this.name + " " + this.price; 
+            }
+            
+
+            };
+        // document.write(car["name"]);
+        // document.write(car["price"]);
+        // document.write(car["color"]);
+       console.log(car.carname());
+       document.getElementById(demo).innerHTML=car.carname();
+    </script>
+</body>
+</html>

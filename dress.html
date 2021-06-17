@@ -8,33 +8,36 @@
     <style>
            .tshirt{
                display: grid;
-               grid-template-columns: 400px 400px 400px;
-               grid-column: 400px 400px;
+               grid-template-columns: 300px 300px 300px 300px 300px;
                padding: 20px;
                grid-gap: 30px;
-               column-gap: 60px;
-               row-gap: 70px;
+               column-gap: 5px;
+               row-gap: 10px;
                background-color:white;
            }
            .tshirt img{
-               height: 300px;
-               width: 300px;
-               
-            
+               height: 200px;
+               width: 200px;
+               align-self: center;
+               border:solid black;
+               background-color: blue;
            }
            .tshirt p{ font-family:cursive;
-               padding: 20px ;
-               text-align: center;
+               padding:0px;
+               
+               
+               
            }
-           div input[type="button"]{
-               text-align: center;
-               padding: 20px;
+           .tshirt input[type="button"]{
+               text-align:center;
+               padding: 20px 10px 20px;
                border: none;
                outline: none;
                height: 10px;
                border-radius: 20px;
                font-size: 18px;
                background: chocolate;
+               color: honeydew;
                
 
            }
@@ -42,19 +45,25 @@
     </style>
 </head>
 <body>
+    
     <div class="tshirt">
         <div><img src="s1.jpg" alt="error">
-            <p><h1>Combo Tshirts</h1> </p>
-            <input type="button" value="buy now">
+            <p>Combo Tshirts<br> 3 Tshirts of colour black,<br> grey & white</p>
+            <p></p><h1>$49</h1><input type="button" value="BUY NOW"></p>
+        </div> <div><img src="s3.jpg" alt="error">
+            <p>Red Tshirt<br> brand of NIKE</p>
+            <p></p><h1>$100</h1><input type="button" value="BUY NOW"></p>
+        </div> <div><img src="s4.jpg" alt="error">
+            <p>Blue shirt<br> with stripes</p>
+            <p></p><h1>$51</h1><input type="button" value="BUY NOW"></p>
+        </div> <div><img src="s5.jpg" alt="error">
+            <p>NIKE Black<br> tshirt</p>
+            <p></p><h1>$49</h1><input type="button" value="BUY NOW"></p>
+        </div> <div><img src="s6.jpg" alt="error">
+            <p>Black and grey <br>tshirt</p>
+            <p></p><h1>$32</h1>&nbsp;<input type="button" value="BUY NOW"></p>
         </div>
-        <div><img src="s3.jpg" alt="error">
-            <p>red tshirt</p>
-        </div>
-        <div><img src="s4.jpg" alt="error">
-             <p>blue shirt</p>
-        </div>
-        <div><img src="s5.jpg" alt="error"></div>
-        <div><img src="s6.jpg" alt="error"></div>
+        
     </div>
 </body>
 </html>
